@@ -4,7 +4,7 @@ MAINTAINER Vinicius Braz Pereira <vinicius.braz@anvy.com.br>
  
 USER root
 RUN apt-get update -qq \
-	&& apt-get install -qqy apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+	&& apt-get install -qqy apt-transport-https ca-certificates curl maven gnupg-agent software-properties-common
 
 RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
 RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
